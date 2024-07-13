@@ -235,6 +235,47 @@ span{
     /* justify-content: center; */
     /* align-items: flex-end; */
 }
+.slide-button{
+    height: 290px;
+    width: 70px;
+    position: absolute;
+    
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-button:hover {
+    border: 3px solid #008296;
+    box-shadow: 0 0 0 2px #fff;
+}
+.slide-button-left{
+    top:9rem ;
+    left: 1rem;
+}
+.slide-button-right{
+    right: 1rem;
+    top: 9rem;
+}
+.slide-icon{
+    font-size: 3rem;
+    
+    
+}
+/* .slide-icon{
+    position: absolute;
+    font-size: 3rem;
+    outline: none;
+    background-color: none;
+}
+.fa-chevron-left{
+        top: 15rem;
+        left: 1rem;
+}
+.fa-chevron-right{
+    top: 15rem;
+    right: 1rem;
+} */
 .hero-message {
     display: flex;
     background-color: white;
@@ -246,18 +287,19 @@ span{
     margin-left:10rem;
     margin-right:10rem ;
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
 }
 .hero-message a{
     color:#007185 ;
     text-decoration: none;
 }
 .hero-images{
-    height:350px;
+    height:500px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     overflow-x:scroll ;
     scroll-margin-bottom: 20px;
+    scrollbar-width: none;
     overflow-y: hidden;
 }
 /* .hero-images::-webkit-scrollbar{
