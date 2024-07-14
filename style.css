@@ -287,14 +287,14 @@ span{
     margin-left:10rem;
     margin-right:10rem ;
     position: relative;
-    bottom: 200px;
+    bottom: 500px;
 }
 .hero-message a{
     color:#007185 ;
     text-decoration: none;
 }
 .hero-images{
-    height:500px;
+    height:100vh;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     overflow-x:scroll ;
