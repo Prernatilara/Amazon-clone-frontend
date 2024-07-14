@@ -3,6 +3,11 @@
     font-family: Arial;
     border: border-box;
 }
+.body-div {
+    z-index: 101;
+    height: 100vh;
+    width: 100vw;
+}
 .navbar {
     height: 60px;
     background-color: #0f1111; 
@@ -174,6 +179,77 @@ span{
     font-size: 14px;
     font-weight: bold;
 }
+
+.cut-mark{
+    height: 40px;
+    width:40px;
+    position: absolute;
+    left: 300px;
+    box-shadow: 2px 2px 20px black;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    display: none;
+}
+.cut-mark i{
+    font-size: 1.8rem ;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+.cut-mark:hover{
+
+}
+.slide-bar {
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    z-index: 101;
+    transition: all infinite ease-in-out 0.2s;
+    overflow-y:scroll ;
+    box-shadow: 2px 2px 30px black;
+    display: none;
+
+}
+.hidden-head{
+    background-color: #232f3e;
+    height: 60px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
+}
+.hidden-head h2{
+    font-size: 19px;
+    line-height: 60px;
+}
+.hidden-head i{
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+.hidden-content ul div {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: rgb(70,70,70);
+    padding: 15px 25px;
+    font-size: 14px;
+}
+.hidden-content .line {
+    background-color: rgba(70,70,70,0.3);
+    height: 1px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
 .panel{
     background-color: #232f3e;
     display: flex;
@@ -244,10 +320,15 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: grab;
 }
 .slide-button:hover {
     border: 3px solid #008296;
     box-shadow: 0 0 0 2px #fff;
+    
+}
+.slide-button:active{
+    cursor: grabbing;
 }
 .slide-button-left{
     top:9rem ;
@@ -301,6 +382,7 @@ span{
     scroll-margin-bottom: 20px;
     scrollbar-width: none;
     overflow-y: hidden;
+    
 }
 /* .hero-images::-webkit-scrollbar{
     cursor: grab;
@@ -359,8 +441,10 @@ span{
 } */ 
 .hero-images img{
     height:500px;
-    width: 100vw;
+    width: 99vw;
     object-fit:cover;
+    cursor: grab;
+    
 }
 .shop-section {
     display: flex;
