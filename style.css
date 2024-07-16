@@ -11,13 +11,10 @@
     display: none;
     background-color: rgba(0,0,0,0.7);
 }
-<<<<<<< HEAD
 .active-0 {
     display: inline;
+    top: 0;
 }
-=======
-
->>>>>>> e8b1e9f12dbdd2ffad5763e54a9de0caba28c269
 .navbar {
     height: 60px;
     background-color: #0f1111; 
