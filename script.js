@@ -24,7 +24,6 @@ pannelAllbtn.addEventListener("click",()=>{
     cutMark.style.display = "inline";
     bodyDiv.style.display = "inline";
 });
-
 cutMark.addEventListener("click",()=>{
    
     cutMark.style.display = "none";
@@ -59,4 +58,4 @@ accList.addEventListener("click",()=>{
     bodyDiv.classList.toggle("active-1");
     triangle.classList.toggle("active");
     
-})
+});
