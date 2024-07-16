@@ -11,6 +11,9 @@
     display: none;
     background-color: rgba(0,0,0,0.7);
 }
+.active-0 {
+    display: inline;
+}
 .navbar {
     height: 60px;
     background-color: #0f1111; 
