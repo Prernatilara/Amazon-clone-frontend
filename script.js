@@ -22,13 +22,13 @@ pannelAllbtn.addEventListener("click",()=>{
     slideBar.style.display = "inline";
     slideBar.classList.add("activate");
     cutMark.style.display = "inline";
-    bodyDiv.style.display = "inline";
+    bodyDiv.classList.add("activate-0)";
 });
 
 cutMark.addEventListener("click",()=>{
    
     cutMark.style.display = "none";
-    bodyDiv.style.display = "none";
+    bodyDiv.classList.remove("activate-0");
     slideBar.classList.remove("activate");
     
 })
