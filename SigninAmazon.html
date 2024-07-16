@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In To Amazone Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="signinpage.css">
+
+</head>
+<body>
+    <div class="logo-container"><div class="logo"></div></div>
+    <div class="Signin-container container">
+        <h1>Sign in</h1>
+        <form action="#" class=" signin-form-box form-box">
+            
+            <p class="email-para para">Enter your email or mobile number</p>
+            <input type="text" placeholder="email" id="input-box" class="email-inpt">
+        
+        
+            <p class="pwd-para para">Enter your Password</p>
+            <div class="pwd-box">
+                <input type="password" placeholder="password" id="input-box" class="pwd-inpt">
+               <i class="fa-solid fa-eye-slash"></i>
+               <i class="fa-solid fa-eye"></i>
+            </div>
+            <a href="#" id="forgot-pwd">Forgot Password?</a>
+        
+            <button class="submit">Continue</button>
+            <p class=" term-cnd-signin para">By continue you are agree with the term and conditions we used</p>
+            <div class="line"></div>
+            <p class="signup para">New user? <a href="#" class="signup-link"> Sign up</a> </p>
+            
+        </form>
+
+        <div class="signup-container container">
+            <h1>Create Account</h1>
+
+            <form action="" class="signup-form-box form-box">
+                <p class="name-p para">Your name</p>
+                <input type="text" placeholder="First and Last name" id="input-box">
+                <p class="email-p para">Mobile number or email</p>
+                <input type="text" placeholder="" id="input-box">
+                <p class="name-p para">Password</p>
+                <div class="pwd-box">
+                    <input type="password" placeholder="At least 6 character" id="input-box" class="pwd-inpt">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <p class="name-p para">Re-enter password</p>
+                <div class="pwd-box">
+                    <input type="password" placeholder="" id="input-box" class="pwd-inpt">
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <button class="submit">Continue</button>
+                <p class=" term-cnd-signup para">By creating an account, you agree to term Amazon's <a href="#">Conditions of use </a> and <a href="#">Privacy Notice.</a></p>
+                <div class="line"></div>
+                <p class="signup para">Already have an account? <a href="#" class="signin-link"> Sign in</a> </p>
+                
+            </form>
+        </div>
+        
+    </div>
+    <script src="signin-up.js"></script>
+</body>
+</html>

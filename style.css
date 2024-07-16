@@ -241,6 +241,9 @@
     color: rgba(17, 17, 17,0.7);
     font-weight:600;
 }
+.acc-signin .signin a:hover{
+    text-decoration: underline red;
+}
 .acc-signin-div {
     height: 10px;
     width: 200px;
@@ -285,6 +288,10 @@
     margin-left: 40px;
     margin-top: 10px;
 }
+.acc-yourlist a:hover{
+    text-decoration: underline;
+    color: #E47911;
+}
 .your-acc{
     height: 320px;
     width: 350px;
@@ -314,9 +321,13 @@
     color: rgba(17, 17, 17,0.7);
     align-self: flex-start;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 9px;
     
     
+}
+.your-acc a:hover{
+    text-decoration: underline;
+    color: #E47911;
 }
 .acc-downsign{
     display: flex;
@@ -420,6 +431,14 @@ span{
 .hidden-head h2{
     font-size: 19px;
     line-height: 60px;
+}
+.hidden-head h2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+.hidden-head h2 a:hover{
+    text-decoration: underline;
 }
 .hidden-head i{
     font-size: 2rem;
