@@ -39,7 +39,7 @@ const backTotop = document.querySelector(".footer-panel1");
 backTotop.addEventListener("click",()=>{
     window.scrollTo({
         top: 0,
-        
+        behavior : "smooth"
     });
    
 });
@@ -52,23 +52,11 @@ const horizBorder = document.querySelector(".acc-signin-border");
 const vertiBorder = document.querySelector(".acc-border");
 const accyourList = document.querySelector(".acc-yourlist");
 const yourAcc = document.querySelector(".your-acc");
-accList.addEventListener("mouseover",()=>{
-    triangle.style.visibility = "visible";
-    accSignin.style.visibility = "visible";
-    horizBorder.style.visibility = "visible";
-    vertiBorder.style.visibility = "visible";
-    accyourList.style.visibility = "visible";
-    yourAcc.style.visibility = "visible";
-    bodyDiv.style.display = "inline";
-})
-accList.addEventListener("mouseout",()=>{
-    setTimeout(()=>{
-        triangle.style.visibility = "hidden";
-    accSignin.style.visibility = "hidden";
-    horizBorder.style.visibility = "hidden";
-    vertiBorder.style.visibility = "hidden";
-    accyourList.style.visibility = "hidden";
-    yourAcc.style.visibility = "hidden";
-    bodyDiv.style.display = "none";
-    },2000);
+const heroMessage = document.querySelector(".hero-message");
+const hidnSignBox = document.querySelector(".hidden-signinbox");
+accList.addEventListener("click",()=>{
+    hidnSignBox.classList.toggle("active");
+    bodyDiv.classList.toggle("active-1");
+    triangle.classList.toggle("active");
+    
 })

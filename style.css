@@ -148,6 +148,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     
 }
 .triangle{
@@ -159,41 +160,69 @@
     right:272px ;
     visibility: hidden;
 }
+.hidden-signinbox{
+    height: 450px;
+    width: 720px;
+    background-color: white;
+    position: absolute;
+    top: 53px;
+    right: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0;
+    border-radius: 5px;
+    transition: all 0.5;
+    visibility: hidden;
+    z-index: 3;
+}
+.active{
+    visibility: visible;
+}
+.active-1{
+    display: inline;
+    z-index: 2;
+    top: 60px;
+
+}
 .acc-signin{
     height: 80px;
     width: 700px;
     z-index: 101;
+    grid-column-start: 1;
+    grid-column-end: 4;
     background-color: white;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    right: 150px;
-    top: 53px;
+    /* right: 150px; */
+    /* top: 53px; */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .acc-signin-border{
     width: 500px;
     height: 0.5px;
     background-color: rgb(17, 17, 17,0.1);
-    position: absolute;
-    top:80px;
-    right:105px;
+    /* position: absolute; */
+    /* top:80px;
+    right:105px; */
+    margin-top: 10px;
     z-index: 104;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .acc-border{
     width: 0.5px;
-    height: 250px;
+    height: 290px;
     background-color: rgb(17, 17, 17,0.1);
     position: absolute;
-    top:150px;
-    right:510px;
+    top:100px;
+    right:400px;
     z-index: 104;
-    visibility: hidden;
+    /* visibility: hidden; */
+    
 }
 .acc-signin .signin{
     height: 37px;
@@ -215,7 +244,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 12px;
     color: rgba(0,0,0,0.7);
 }
@@ -226,15 +255,19 @@
 .acc-yourlist{
     height: 320px;
     width: 350px;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
     color: black;
     display: flex;
     flex-direction: column;
-    top: 133px;
-    right: 500px;
+    /* top: 133px;
+    right: 500px; */
     border-bottom-left-radius: 5px;
-    visibility: hidden;
+    /* visibility: hidden; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .acc-yourlist h3{
     align-self: flex-start;
@@ -252,15 +285,19 @@
 .your-acc{
     height: 320px;
     width: 350px;
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
     color: black;
     display: flex;
     flex-direction: column;
-    top: 133px;
-    right: 150px;
+    /* top: 133px;
+    right: 150px; */
     border-bottom-right-radius: 5px;
-    visibility: hidden;
+    /* visibility: hidden; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .your-acc h3{
     margin-top:20px;
@@ -466,14 +503,7 @@ span{
 }
 /* hero-section style */
 .hero-section{
-    /* background-image: url(hero_image.jpg);
-    background-size: cover; */
     height: 350px;
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: flex-end; */
-    
 }
 .slide-button{
     height: 290px;
@@ -485,7 +515,7 @@ span{
     justify-content: center;
     align-items: center;
     cursor: grab;
-    
+    transition: all 2s;
 }
 .slide-button:hover {
     border: 3px solid #008296;
@@ -508,20 +538,6 @@ span{
     
     
 }
-/* .slide-icon{
-    position: absolute;
-    font-size: 3rem;
-    outline: none;
-    background-color: none;
-}
-.fa-chevron-left{
-        top: 15rem;
-        left: 1rem;
-}
-.fa-chevron-right{
-    top: 15rem;
-    right: 1rem;
-} */
 .hero-message {
     display: flex;
     background-color: rgba(0,0,0,0.2);
@@ -548,72 +564,16 @@ span{
     scroll-margin-bottom: 20px;
     scrollbar-width: none;
     overflow-y: hidden;
-    transition: all 0.5s;
+    transition: all 2s;
    
     
 }
-/* .hero-images::-webkit-scrollbar{
-    cursor: grab;
-}
-.hero-images::-webkit-scrollbar-track{
-    cursor: grab;
-}
-.hero-images::-webkit-scrollbar-thumb{
-    cursor: grab;
-} */
-/* .hero-images::-webkit-scrollbar:active{
-    cursor: grabbing;
-} */
-/* .hero-images::-webkit-scrollbar-track:active{
-    cursor: grabbing;
-} */
-/* .hero-images::-webkit-scrollbar-thumb:active{
-    cursor: grabbing;
-} */
-/* .hero-section .chevron-left {
-    outline:none;
-    position: absolute;
-    top: 50px;
-    left: 100px;
-    background-color:#37475a;
-    font-size: 2rem;
-    border: 2px solid transparent;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero-section .chevron-right {
-    outline: none;
-    position: relative;
-    left: 1480px;
-    bottom: 35px;
-    
-    background-color:#37475a;
-    font-size: 2rem;
-    border: 2px solid transparent;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
- /* .hero-section  i {
-    font-size: 2rem;   
-}
-.hero-section button i:hover {
-    color:#222f3d
-} */ 
 .hero-images img{
     height:500px;
     width: 99vw;
     object-fit:cover;
     cursor: grab;
-   
-    
+    transition: all 0.5s; 
 }
 .shop-section {
     display: flex;
@@ -805,11 +765,11 @@ span{
     font-weight: 600;
     font-size: 0.85rem;
     cursor: pointer;
-    transition: all 2s;
+    /* transition: all 2s; */
 }
 .footer-panel1:hover{
     background-color: rgba(55, 71, 90,0.9);
-    transition: all 2s;
+    /* transition: all 0s; */
 }
 .footer-panel2{
     background-color: #222f3d;
