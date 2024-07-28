@@ -1,4 +1,7 @@
-
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
 // This is code for image slider in the hero section 
 
 const heroImages = document.querySelectorAll(".hero-images");
