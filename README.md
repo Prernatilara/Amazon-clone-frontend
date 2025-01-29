@@ -5,7 +5,7 @@ A front-end clone of the Amazon website built using HTML, CSS, and JavaScript. T
 🏠 Home Page – Amazon-like layout with a navbar, banners, and product listings.
 🔍 Search Bar – Allows users to search for products (static functionality).
 🎨 Animations & Hover Effects – Smooth UI interactions using CSS and JavaScript.
-🔗 Navigation Bar – Includes sign-in, 
+🔗 Navigation Bar – Includes sign-in, return option and search bar.
 🛠️ Technologies Used
 HTML – Structure of the webpage.
 CSS – Styling, layout.
